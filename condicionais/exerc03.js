@@ -1,6 +1,6 @@
 const leia = require ('readline-sync')
 
-let codigo, quantidade, preco, produto
+let codigo, quantidade, preco, produto, total
 
 console.log("Digite o código do item")
 codigo = leia.questionInt()
@@ -12,34 +12,42 @@ switch(codigo){
   case 1:
     produto = "Cachorro Quente"
     preco = 10.00
+    total = quantidade * preco
+    console.log("Produto: ", produto, "\nValor total: R$ ",total )
     break
   case 2:
     produto = "X-Salada"
     preco = 15.00
+    total = quantidade * preco
+    console.log("Produto: ", produto, "\nValor total: R$ ",total )
     break
   case 3:
     produto = "X-Bacon"
     preco = 18.00
+    total = quantidade * preco
+    console.log("Produto: ", produto, "\nValor total: R$ ",total )
     break
   case 4:
     produto = "Bauru"
     preco = 12.00
+    total = quantidade * preco
+    console.log("Produto: ", produto, "\nValor total: R$ ",total )
     break
   case 5:
     produto = "Refrigerante"
     preco = 8.00
+    total = quantidade * preco
+    console.log("Produto: ", produto, "\nValor total: R$ ",total )
     break
   case 6:
     produto = "Suco de laranja"
     preco = 13.00
+    total = quantidade * preco
+    console.log("Produto: ", produto, "\nValor total: R$ ",total )
     break
   default:
     console.log("Código inválido!")
 }
-
-
-let total = quantidade * preco
-console.log("Produto: ", produto, "\nValor total: R$ ",total )
 
 
 
