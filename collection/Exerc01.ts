@@ -1,8 +1,6 @@
 import * as readlineSync from 'readline-sync';
 
 
-
-
 const cores: string[] = [] 
 for(let i = 0; i < 5; i++){ // contador - até 5 cores
     let cor = readlineSync.question("Digite a cor");
